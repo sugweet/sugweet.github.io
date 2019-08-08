@@ -1,0 +1,2 @@
+# sugweet.github.io
+hexo
