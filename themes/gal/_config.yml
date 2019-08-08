@@ -4,7 +4,7 @@ logo_image:  # 使用路径, 填写文件名即可(比如, logo_image: logo.png 
 navbar_text: # 如果没有Logo, 则设置为false, 并且设置navbar_text(否则默认为站点标题, 最好进行设置)
 
 # 必填, 设定小型设备展示背景图, 指向source/imgs, 比如xs_bg_image: bg.png -> source/imgs/bg.png
-xs_bg_image: xsbg.gif
+xs_bg_image: mobile.png
 
 # 必填, 个人头像, 如果是路径, 则指向source/imgs
 # 也可以填http:// OR https:// url地址
