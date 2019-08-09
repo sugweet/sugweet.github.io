@@ -27,7 +27,7 @@
         @media (max-width: 768px) {
             body {
                 background-color: #f0f0f0;
-                background: url('/imgs/bg.png');
+                background: url('/imgs/dg.jpg');
                 background-attachment: fixed;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -139,10 +139,22 @@
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/tag1/">-tag1</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -430,6 +442,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/2019/08/09/红药为谁生/">红药为谁生</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/2019/08/09/hello-world/">Hello World</a>
                 </span>
             </li>
@@ -453,6 +471,12 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2019/08/09/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/09/红药为谁生/">红药为谁生</a>
                 </span>
             </li>
             
@@ -484,6 +508,8 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/tag1/" style="font-size: 8.871795585815274px;" class="tag-cloud-link">-tag1</a>
     
 </div>
                 
