@@ -27,8 +27,14 @@
         @media (max-width: 768px) {
             body {
                 background-color: #f0f0f0;
-                background: url('/imgs/mobile.png');
+                background: url('/imgs/bg.png');
                 background-attachment: fixed;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 100vh;
+				margin: 0px;
+				padding: 0px;
             }
         }
     </style>
@@ -60,6 +66,24 @@
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
     
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="http://yoursite.com" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
         <div class="navbar-header">
@@ -70,18 +94,17 @@
             </button>
             <a href="http://yoursite.com">
                 
+                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                        width: 200px;
+                        height: 50px;
+                        display: block;
+                        background: url('/imgs/logo.png') no-repeat;
                     }
                 </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Sugweet Chen</div>
+                    
+                <div class="navbar-brand"></div>
                 
             </a>
         </div>
@@ -263,15 +286,19 @@
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
     
     <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+        <a href="http://chuangzaoshi.com/" target="_blank">创造狮</a>
     </li>
     
     <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+        <a href="https://tableconvert.com/" target="_blank">表格生成器</a>
     </li>
     
     <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+        <a href="https://www.gal123.com/" target="_blank">绅士导航</a>
+    </li>
+    
+    <li>
+        <a href="https://www.moe123.com/" target="_blank">萌导航</a>
     </li>
     
 </div>
@@ -284,11 +311,7 @@
     </li>
     
     <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-    </li>
-    
-    <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
     </li>
     
 </div>
@@ -361,6 +384,8 @@
 </script>
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
 
 
 
