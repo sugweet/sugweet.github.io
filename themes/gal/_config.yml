@@ -2,6 +2,8 @@
 use_logo: true
 logo_image: logo.png # 使用路径, 填写文件名即可(比如, logo_image: logo.png 指向 source/imgs/logo.png)
 navbar_text: 陌消笙 # 如果没有Logo, 则设置为false, 并且设置navbar_text(否则默认为站点标题, 最好进行设置)
+# 网站ico
+favicon: /imgs/favicon.png
 
 # 必填, 设定小型设备展示背景图, 指向source/imgs, 比如xs_bg_image: bg.png -> source/imgs/bg.png
 xs_bg_image: dg6.jpg
@@ -53,7 +55,6 @@ default_preview:
   - preview3.jpg
   - preview4.jpg
   
-excerpt: #文章摘要 当鼠标移入文章图片时显示的文字，建议在每篇文章中的front-matter设置
 
 # 侧边栏
 sidebar:
@@ -80,8 +81,6 @@ friend_links:
 
 # 个人链接配置, 要先开启上面的links
 links:
-  - name: Github
-    link: https://github.com/sugweet/
   - name: 百度
     link: https://www.baidu.com/
 
@@ -152,15 +151,15 @@ leancloud:
 # 如果不用的话要把下面的use_comment设置为false
 comment:
   gitment:
-      owner: # 必填项, 你的GitHub ID
-      repo: # 必填项  你的存储评论的repo
+      owner: sugweet # 必填项, 你的GitHub ID
+      repo: comment # 必填项  你的存储评论的repo
       oauth:
-        client_id:  # 必填项
-        client_secret: # 必填项
+        client_id: 94c8c55ffcc8dc42179c # 必填项
+        client_secret: f6dd6e80378bdb3f822a3b1faf964bf9d579563c # 必填项
         redirect_uri: # 可以填也可以不填
 
 # 是否使用评论系统
-use_comment: false
+use_comment: true
 
 node_sass:
   outputStyle: compressed

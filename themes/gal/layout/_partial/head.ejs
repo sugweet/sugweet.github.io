@@ -7,6 +7,7 @@
     <% if (config.description) { %>
     <meta name="description" content="<%= config.description %>">
     <% } %>
+	<% if (theme.favicon){ %><link rel="icon" href="<%- url_for(theme.favicon) %>"> <% } %>
     <% let title = [config.title] %>
     <% if (page.tag) {
         title.unshift(`${__('tags')}: ${page.tag}`)
