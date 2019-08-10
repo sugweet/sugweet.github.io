@@ -224,6 +224,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'tags'
+    }
+</script>
+
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -337,7 +346,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/tag1/" style="font-size: 16.53115470383911px;" class="tag-cloud-link">-tag1</a>
+    <a href="/tags/tag1/" style="font-size: 18.097968146088967px;" class="tag-cloud-link">-tag1</a>
     
 </div>
                 
@@ -451,5 +460,27 @@
 <script src="/js/oni.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Thu Aug 08 2019 16:29:06 GMT+0800'
+      window.commentConfig.owner = 'sugweet'
+      window.commentConfig.repo = 'comment'
+      window.commentConfig.client_id = '94c8c55ffcc8dc42179c'
+      window.commentConfig.client_secret = 'f6dd6e80378bdb3f822a3b1faf964bf9d579563c'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Thu Aug 08 2019 16:29:06 GMT+0800',
+        owner: 'sugweet',
+        repo: 'comment',
+        client_id: '94c8c55ffcc8dc42179c',
+        client_secret: 'f6dd6e80378bdb3f822a3b1faf964bf9d579563c',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
